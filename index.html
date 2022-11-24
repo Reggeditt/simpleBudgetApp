@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Budget App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <div class="form-section">
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="e.g Jane Doe">
+                <label for="age">Age:</label>
+                <input type="number" id="age" min="18" max="120">
+                <label for="income">How much do you earn a month?</label>
+                <input type="number" id="income">
+                <label for="income">How many dependants do you have?</label>
+                <input type="number" id="dependants">
+                <label for="gender">Select gender</label>
+                <input type="radio" id="gender" name="male" value="male">
+                <input type="radio" id="gender" name="female" value="female">
+                <label for="marital-status">Marital status</label>
+                <input type="checkbox" id="marital-status" name="single">
+                <input type="checkbox" id="marital-status" name="married">
+                <input type="checkbox" id="marital-status" name="divorced">
+                <input type="checkbox" id="marital-status" name="Widow">
+                <button id="submit-btn" type="submit">Submit</button>                
+            </form>
+        </div>
+        <div class="budget-display-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Budget Category</th>
+                        <th>Amount(NGN)</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>rent</td>
+                        <td id="rent-amt"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>food</td>
+                        <td id="food-amt"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>transportation</td>
+                        <td id="trans-amt"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>utility bills</td>
+                        <td id="util-amt"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>clothing</td>
+                        <td id="clothing-amt"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>savings</td>
+                        <td id="savings-amt"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>miscellenous</td>
+                        <td id="misc-amt"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>bills (school fees, etc)</td>
+                        <td id="bills-amt"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>insurance</td>
+                        <td id="ins-amt"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>medical bills</td>
+                        <td id="med-amt"></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
